@@ -4,173 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Festejando a Conexão Campo-Cidade</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(to right, #4caf50, #81c784);
-      padding: 20px;
-      text-align: center;
-      color: white;
-    }
-
-    nav {
-      background: #388e3c;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 15px 20px;
-      display: inline-block;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background: #2e7d32;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .intro {
-      background: url('https://images.unsplash.com/photo-1596568350407-225d6f1ba4cd?auto=format&fit=crop&w=1050&q=80') no-repeat center center/cover;
-      height: 400px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-shadow: 2px 2px 6px #000;
-      text-align: center;
-    }
-
-    .intro h1 {
-      font-size: 3rem;
-      max-width: 90%;
-    }
-
-    h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      background: #2e7d32;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 600px) {
-      .intro h1 {
-        font-size: 2rem;
-      }
-
-      nav a {
-        padding: 10px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
     <h1>Festejando a Conexão Campo-Cidade</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#video">Vídeo</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#galeria">Galeria</a>
-    <a href="#curiosidades">Curiosidades</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>Este projeto celebra a união entre o campo e a cidade, mostrando como suas conexões fortalecem a cultura, a economia e a sustentabilidade.</p>
+    </section>
 
-  <div class="intro">
-    <h1>Unindo o verde do campo à energia da cidade.</h1>
-  </div>
+    <section id="galeria">
+      <h2>Galeria de Imagens</h2>
+      <div class="imagens">
+        <img src="imagens/campo.jpg" alt="Imagem do campo">
+        <img src="imagens/cidade.jpg" alt="Imagem da cidade">
+      </div>
+    </section>
 
-  <section id="sobre">
-    <h2>Sobre o Tema</h2>
-    <p>
-      A conexão entre o campo e a cidade é fundamental para o equilíbrio social, econômico e cultural do nosso país.
-      Enquanto o campo produz os alimentos, a cidade fornece tecnologias, mercados e serviços que impulsionam o desenvolvimento rural.
-    </p>
-  </section>
+    <section id="video">
+      <h2>Vídeo Explicativo</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO" title="Vídeo da Conexão Campo-Cidade" allowfullscreen></iframe>
+    </section>
 
-  <section id="projetos">
-    <h2>Projetos de Integração</h2>
-    <ul>
-      <li><strong>Feiras Locais:</strong> Onde produtores rurais vendem direto aos consumidores urbanos.</li>
-      <li><strong>Educação Conectada:</strong> Alunos da cidade trocam experiências com escolas rurais.</li>
-      <li><strong>Apps de Agroentrega:</strong> Aplicativos conectam diretamente pequenos produtores aos clientes.</li>
-    </ul>
-  </section>
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
 
-  <section id="galeria">
-    <h2>Galeria</h2>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1585043481809-b9d4df165879?auto=format&fit=crop&w=500&q=60" alt="Feira do campo" />
-      <img src="https://images.unsplash.com/photo-1542838687-2e4c87e4d3fb?auto=format&fit=crop&w=500&q=60" alt="Trator e cidade ao fundo" />
-      <img src="https://images.unsplash.com/photo-1538688525198-9a57f5b0ff73?auto=format&fit=crop&w=500&q=60" alt="Educação rural" />
-    </div>
-  </section>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" rows="4" required></textarea>
 
-  <section id="curiosidades">
-    <h2>Curiosidades</h2>
-    <ul>
-      <li>🏡 70% dos alimentos no Brasil vêm da agricultura familiar.</li>
-      <li>🚜 O campo e a cidade compartilham expressões culturais, como festas juninas!</li>
-      <li>🌱 Tecnologias urbanas como drones e apps já estão ajudando agricultores no campo.</li>
-    </ul>
-  </section>
-
-  <section id="contato">
-    <h2>Contato & Agradecimentos</h2>
-    <p>Obrigado por visitar este site! Ele foi criado com carinho para o Concurso Agrinho 2025.</p>
-    <p><strong>Desenvolvido por:</strong> [Seu Nome] • [Sua Escola]</p>
-  </section>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>🌾 Campo e Cidade: juntos somos mais fortes! 🌇</p>
+    <p>&copy; 2025 - Projeto Agrinho | Desenvolvido por [Seu Nome]</p>
   </footer>
-
 </body>
 </html>
