@@ -1,142 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festejando a Conexão Campo-Cidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
             <div class="logo">Campo<span>Cidade</span></div>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
+                <li><a href="#inicio">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
+                <li><a href="#linha-do-tempo">Linha do tempo</a></li>
                 <li><a href="#highlights">Destaques</a></li>
-                <li><a href="#events">Integrantes</a></li>
+                <li><a href="#integrantes">Integrantes</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
     </nav>
-    <header>
-        <section class="header-content" id="home">
-            <h1>Uma celebração que une dois mundos <span>Campo-Cidade</span></h1>
-            <p class="slogan">Unindo tradição e modernidade em uma celebração única</p>
-        </section>
-    </header>
-    
+
+    <section class="hero" id="inicio">
+        <!-- Imagem do Campo -->
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Paisagem rural" class="hero-image hero-image--campo">
+
+        <!-- Imagem da Cidade -->
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            alt="Paisagem urbana" class="hero-image hero-image--cidade">
+
+        <!-- Overlay com gradiente -->
+        <div class="hero-overlay"></div>
+
+        <!-- Conteúdo do Hero -->
+        <div class="hero-content">
+            <h1>Festejando a Conexão <span>Campo-Cidade</span></h1>
+            <p>Uma jornada visual que une dois mundos essenciais para nosso futuro sustentável</p>
+        </div>
+    </section>
+
     <section class="section" id="about">
         <h2 class="section-title">Sobre o <span>Evento</span></h2>
         <div class="about-content">
             <div class="about-text">
-                <p>O "Festejando a Conexão Campo-Cidade" é um evento anual que celebra a interdependência e a harmonia entre as áreas rurais e urbanas. Reconhecemos que ambas são essenciais para o desenvolvimento sustentável e a qualidade de vida de todos.</p>
-                <p>Nossa missão é criar pontes entre esses dois mundos, promovendo o entendimento mútuo, a valorização da produção agrícola e a integração de tecnologias urbanas com saberes tradicionais.</p>
-                <p>Durante o evento, você encontrará feiras de produtos orgânicos, workshops sobre sustentabilidade, apresentações culturais que misturam tradições rurais e urbanas, e muito mais!</p>
+                <p>O "Festejando a Conexão Campo-Cidade" é um evento anual que celebra a interdependência e a harmonia
+                    entre as áreas rurais e urbanas. Reconhecemos que ambas são essenciais para o desenvolvimento
+                    sustentável e a qualidade de vida de todos.</p>
+                <p>Nossa missão é criar pontes entre esses dois mundos, promovendo o entendimento mútuo, a valorização
+                    da produção agrícola e a integração de tecnologias urbanas com saberes tradicionais.</p>
+                <p>Durante o evento, você encontrará feiras de produtos orgânicos, workshops sobre sustentabilidade,
+                    apresentações culturais que misturam tradições rurais e urbanas, e muito mais!</p>
             </div>
             <div class="about-image">
                 <img src="image0.png" alt="Conexão campo cidade">
             </div>
         </div>
     </section>
-    
-    <section class="section highlights" id="highlights">
-        <h2 class="section-title">Nossos <span>Destaques</span></h2>
-        <div class="highlight-cards">
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Feira de produtos">
+
+    <!-- Seção da Linha do Tempo -->
+    <section class="timeline-section" id="linha-do-tempo">
+        <div class="container">
+            <h2 class="section-title">Linha do Tempo da <span>Conexão</span></h2>
+
+            <div class="timeline">
+                <!-- Evento 1 -->
+                <div class="timeline-event">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Década de 1950</span>
+                        <h3 class="timeline-title">Produção Agrícola Tradicional</h3>
+                        <p>O campo fornecia alimentos básicos para as cidades através de métodos tradicionais de
+                            cultivo, com pouca tecnologia envolvida.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h3>Feira do Produtor</h3>
-                    <p>Compre diretamente dos agricultores locais, produtos frescos e orgânicos, cultivados com amor e respeito à natureza.</p>
+
+                <!-- Evento 2 -->
+                <div class="timeline-event">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Década de 1980</span>
+                        <h3 class="timeline-title">Mecanização Agrícola</h3>
+                        <p>Introdução de máquinas e tecnologias urbanas no campo, aumentando a produtividade e
+                            fortalecendo os laços com as cidades.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Workshop">
+
+                <!-- Evento 3 -->
+                <div class="timeline-event">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Anos 2000</span>
+                        <h3 class="timeline-title">Agricultura Urbana</h3>
+                        <p>As cidades começam a adotar práticas agrícolas, com hortas comunitárias e telhados verdes,
+                            trazendo o campo para o ambiente urbano.</p>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <h3>Workshops Educativos</h3>
-                    <p>Aprenda sobre agricultura urbana, compostagem, tecnologias sustentáveis e como aplicar saberes rurais no cotidiano urbano.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-image">
-                    <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Apresentação cultural">
-                </div>
-                <div class="card-content">
-                    <h3>Apresentações Culturais</h3>
-                    <p>Show de música caipira contemporânea, danças tradicionais com toques urbanos e teatro que retrata a vida no campo e na cidade.</p>
+
+                <!-- Evento 4 -->
+                <div class="timeline-event">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Atualidade</span>
+                        <h3 class="timeline-title">Conexão Integral</h3>
+                        <p>Tecnologias digitais unem campo e cidade em tempo real, com sistemas de rastreamento, feiras
+                            virtuais e consumo consciente.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section class="section" id="events">
-        <h2 class="section-title">Integrantes do <span>Projeto</span></h2>
-        <div class="event-list">
-            <div class="event">
-                <div class="event-date">
-                    <span class="event-day">Matheus</span>
-                    <span class="event-month">Ferreira</span>
+
+    <section class="highlights-section" id="highlights">
+        <div class="container">
+            <h2 class="section-title">Nossos <span>Destaques</span></h2>
+            <div class="highlight-cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Feira de produtos">
+                    </div>
+                    <div class="card-content">
+                        <h3>Feira do Produtor</h3>
+                        <p>Compre diretamente dos agricultores locais, produtos frescos e orgânicos, cultivados com amor
+                            e respeito à natureza.</p>
+                    </div>
                 </div>
-                <div class="event-details">
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Workshop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Workshops Educativos</h3>
+                        <p>Aprenda sobre agricultura urbana, compostagem, tecnologias sustentáveis e como aplicar
+                            saberes rurais no cotidiano urbano.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Apresentação cultural">
+                    </div>
+                    <div class="card-content">
+                        <h3>Apresentações Culturais</h3>
+                        <p>Show de música caipira contemporânea, danças tradicionais com toques urbanos e teatro que
+                            retrata a vida no campo e na cidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mapa-section">
+        <div class="container">
+          <h2 class="section-title">Caminho dos <span>Alimentos</span></h2>
+          <p class="section-subtitle">Da produção rural ao consumo urbano</p>
+          
+          <div class="mapa-conteudo">
+            <div class="mapa-container">
+              <svg viewBox="0 0 800 300" class="mapa-svg">
+                <!-- Linha principal -->
+                <path class="rota-principal" d="M100,250 C300,150 500,150 700,250" 
+                      fill="none" stroke="var(--amarelo-festa)" stroke-width="6" 
+                      stroke-dasharray="1200" stroke-dashoffset="1200"/>
+                
+                <!-- Rotas secundárias -->
+                <path class="rota-secundaria" d="M250,250 L250,200" 
+                      fill="none" stroke="var(--verde-campo)" stroke-width="3"
+                      stroke-dasharray="200" stroke-dashoffset="200"/>
+                      
+                <path class="rota-secundaria" d="M550,250 L550,200" 
+                      fill="none" stroke="var(--azul-cidade)" stroke-width="3"
+                      stroke-dasharray="200" stroke-dashoffset="200"/>
+                
+                <!-- Pontos de interesse -->
+                <g class="ponto" transform="translate(100,250)">
+                  <circle cx="0" cy="0" r="12" fill="var(--verde-campo)"/>
+                  <text x="0" y="-20" text-anchor="middle" font-size="30">🚜</text>
+                  <text x="0" y="35" text-anchor="middle" class="ponto-label">Fazendas</text>
+                </g>
+                
+                <g class="ponto" transform="translate(250,200)">
+                  <circle cx="0" cy="0" r="10" fill="var(--verde-campo)"/>
+                  <text x="0" y="-18" text-anchor="middle" font-size="24">🏭</text>
+                  <text x="0" y="30" text-anchor="middle" class="ponto-label">Processamento</text>
+                </g>
+                
+                <g class="ponto" transform="translate(550,200)">
+                  <circle cx="0" cy="0" r="10" fill="var(--azul-cidade)"/>
+                  <text x="0" y="-18" text-anchor="middle" font-size="24">🚚</text>
+                  <text x="0" y="30" text-anchor="middle" class="ponto-label">Distribuição</text>
+                </g>
+                
+                <g class="ponto" transform="translate(700,250)">
+                  <circle cx="0" cy="0" r="12" fill="var(--azul-cidade)"/>
+                  <text x="0" y="-20" text-anchor="middle" font-size="30">🏪</text>
+                  <text x="0" y="35" text-anchor="middle" class="ponto-label">Mercados</text>
+                </g>
+              </svg>
+            </div>
+            
+            <div class="etapas">
+              <div class="etapa">
+                <div class="etapa-icone">🌱</div>
+                <h3>Produção</h3>
+                <p>Agricultores cultivam alimentos usando métodos tradicionais e sustentáveis</p>
+              </div>
+              
+              <div class="etapa">
+                <div class="etapa-icone">🏭</div>
+                <h3>Processamento</h3>
+                <p>Alimentos são limpos, selecionados e embalados</p>
+              </div>
+              
+              <div class="etapa">
+                <div class="etapa-icone">🚛</div>
+                <h3>Transporte</h3>
+                <p>Produtos viajam do campo para os centros urbanos</p>
+              </div>
+              
+              <div class="etapa">
+                <div class="etapa-icone">🛒</div>
+                <h3>Consumo</h3>
+                <p>Famílias urbanas têm acesso a alimentos frescos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="section" id="integrantes">
+        <h2 class="section-title">Integrantes do <span>Projeto</span></h2>
+        <div class="integrantes-lista">
+            <div class="integrantes">
+                <div class="integrantes-fundo">
+                    <span class="integrantes-nome">Matheus</span>
+                    <span class="integrantes-sobrenome">Ferreira</span>
+                </div>
+                <div class="integrantes-detalhes">
                     <h3>Abertura Oficial</h3>
                     <p>Cerimônia de abertura com autoridades e representantes de comunidades rurais e urbanas.</p>
                     <p>10:00 - Parque Central</p>
                 </div>
             </div>
-            <div class="event">
-                <div class="event-date">
-                    <span class="event-day">Luiza</span>
-                    <span class="event-month">Fernandes</span>
+            <div class="integrantes">
+                <div class="integrantes-fundo">
+                    <span class="integrantes-nome">Luiza</span>
+                    <span class="integrantes-sobrenome">Fernandes</span>
                 </div>
-                <div class="event-details">
+                <div class="integrantes-detalhes">
                     <h3>Feira do Produtor</h3>
                     <p>Produtos frescos diretamente do campo para sua mesa. Mais de 50 agricultores participantes.</p>
                     <p>08:00-18:00 - Praça da Alimentação</p>
                 </div>
             </div>
-            <div class="event">
-                <div class="event-date">
-                    <span class="event-day">Nicolas</span>
-                    <span class="event-month">Martins</span>
+            <div class="integrantes">
+                <div class="integrantes-fundo">
+                    <span class="integrantes-nome">Nicolas</span>
+                    <span class="integrantes-sobrenome">Martins</span>
                 </div>
-                <div class="event-details">
+                <div class="integrantes-detalhes">
                     <h3>Abertura Oficial</h3>
                     <p>Cerimônia de abertura com autoridades e representantes de comunidades rurais e urbanas.</p>
                     <p>10:00 - Parque Central</p>
                 </div>
             </div>
-            <div class="event">
-                <div class="event-date">
-                    <span class="event-day">João</span>
-                    <span class="event-month">Pedro</span>
+            <div class="integrantes">
+                <div class="integrantes-fundo">
+                    <span class="integrantes-nome">João</span>
+                    <span class="integrantes-sobrenome">Pedro</span>
                 </div>
-                <div class="event-details">
+                <div class="integrantes-detalhes">
                     <h3>Abertura Oficial</h3>
                     <p>Cerimônia de abertura com autoridades e representantes de comunidades rurais e urbanas.</p>
                     <p>10:00 - Parque Central</p>
                 </div>
             </div>
-            <div class="event">
-                <div class="event-date">
-                    <span class="event-day">Bruno</span>
-                    <span class="event-month">Santian</span>
+            <div class="integrantes">
+                <div class="integrantes-fundo">
+                    <span class="integrantes-nome">Bruno</span>
+                    <span class="integrantes-sobrenome">Santian</span>
                 </div>
-                <div class="event-details">
+                <div class="integrantes-detalhes">
                     <h3>Show Musical</h3>
                     <p>Noite de música com artistas que misturam sons tradicionais do campo com ritmos urbanos.</p>
                     <p>19:00 - Palco Principal</p>
                 </div>
             </div>
-            <div class="event">
-                <div class="event-date">
-                    <span class="event-day">Kalil</span>
-                    <span class="event-month">Pock</span>
+            <div class="integrantes">
+                <div class="integrantes-fundo">
+                    <span class="integrantes-nome">Kalil</span>
+                    <span class="integrantes-sobrenome">Pock</span>
                 </div>
-                <div class="event-details">
+                <div class="integrantes-detalhes">
                     <h3>Abertura Oficial</h3>
                     <p>Cerimônia de abertura com autoridades e representantes de comunidades rurais e urbanas.</p>
                     <p>10:00 - Parque Central</p>
@@ -144,45 +305,47 @@
             </div>
         </div>
     </section>
-    
-    <section class="section contact" id="contact">
-        <h2 class="section-title">Entre em <span>Contato</span></h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Fale Conosco</h3>
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <p>Av. Rep. Argentina, 2376 - Água Verde, Curitiba - PR, 80610-260</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <p>(41) 3345-3993</p>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">✉️</div>
-                    <p>ctapedromacedo@escola.pr.gov.br</p>
-                </div>
-            </div>
-            <div class="contact-form">
-                <form>
-                    <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" required>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em <span>Contato</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Fale Conosco</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <p>Av. Rep. Argentina, 2376 - Água Verde, Curitiba - PR, 80610-260</p>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" required>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <p>(41) 3346-3993</p>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" required></textarea>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <p>ctapedromacedo@escola.pr.gov.br</p>
                     </div>
-                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
-                </form>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <footer>
         <div class="footer-content">
             <div class="logo">Campo<span>Cidade</span></div>
@@ -190,4 +353,5 @@
         </div>
     </footer>
 </body>
+
 </html>
